@@ -1,0 +1,7 @@
+[user]
+	name = dakshitagrawal97
+	email = neelagrawal08@gmail.com
+[credential]
+	helper = store
+[alias]
+	sl = log --graph --pretty=format:'%C(yellow)%d%Creset %s %n%Cgreen(%cr) %C(bold blue)%Cred%h%Creset - <%an>%Creset%n' --abbrev-commit --date=relative --all
