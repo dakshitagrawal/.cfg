@@ -2,7 +2,7 @@ cd $HOME
 
 apt install -y curl
 
-apt-get install tmux
+apt-get install -y tmux
 git clone https://github.com/gpakosz/.tmux.git
 ln -s -f .tmux/.tmux.conf
 
