@@ -1,5 +1,9 @@
 # My Ubuntu Configuration
-This repository contains my current linux environment configuration. It facilitates a quick and easy setup on other Ubuntu systems.
+This repository contains my current linux environment configuration. It facilitates a quick and easy setup on other Ubuntu systems. How it looks after setup:
+
+![](./.cfg/assets/zsh.png)
+
+![](./.cfg/assets/nvim1.png)
 
 ## I. Prerequisites
 
@@ -46,6 +50,10 @@ If you do not have miniconda at `$HOME/miniconda`, it will get installed:
 
 ## III. Resources
 
-The following resources were used to setup this repository:
+The following resources were helpful in setting up this repository:
 
-1. [Atlassian's dotfile tutorial](https://www.atlassian.com/git/tutorials/dotfiles)
+* [Atlassian's dotfile tutorial](https://www.atlassian.com/git/tutorials/dotfiles)
+
+The following resources were helpful in customizing my dotfiles.
+* [A Complete Guide to Setting up Neovim for Python Development on Linux](https://jdhao.github.io/2018/12/24/centos_nvim_install_use_guide_en/)
+* GitHub READMEs of various plugins
