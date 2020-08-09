@@ -67,7 +67,6 @@ Plug 'scrooloose/nerdcommenter'
 
 "Automatic file formatting"
 Plug 'sbdchd/neoformat'
-Plug 'psf/black', { 'tag': '19.10b0' }
 
 "Fuzzy file search"
 Plug 'ctrlpvim/ctrlp.vim'
@@ -99,8 +98,6 @@ Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 "Show undo tree visualization"
 Plug 'mbbill/undotree'
 
-"Tmux status line"
-Plug 'edkolev/tmuxline.vim'
 
 "Smart code compose using AI"
 if has('win32') || has('win64')

@@ -1,6 +1,11 @@
 cd $HOME
 
 apt install -y curl
+
+apt-get install tmux
+git clone https://github.com/gpakosz/.tmux.git
+ln -s -f .tmux/.tmux.conf
+
 git clone --bare https://github.com/dakshitagrawal97/.cfg.git $HOME/.cfg
 
 function config {
@@ -45,5 +50,6 @@ pip install isort
 if [ ! -d "$HOME/miniconda3" ]; then
     curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
     bash Miniconda3-latest-Linux-x86_64.sh
+    rm Miniconda3-latest-Linux-x86_64.sh
 fi
 
