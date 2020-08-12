@@ -1,8 +1,9 @@
 cd $HOME
 
 apt install -y curl
-
 apt-get install -y tmux
+apt install -y zsh
+
 git clone https://github.com/gpakosz/.tmux.git
 ln -s -f .tmux/.tmux.conf
 
@@ -23,7 +24,6 @@ fi
 config checkout
 config config status.showUntrackedFiles no
 
-apt install -y zsh
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 config checkout -- .zshrc
 
@@ -33,7 +33,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 chmod u+x $HOME/nvim.appimage && $HOME/nvim.appimage
-if [$? = 0 ]; then
+if [ $? = 0 ]; then
     echo "Installed nvim"
 else
     $HOME/nvim.appimage --appimage-extract
@@ -42,10 +42,6 @@ fi
 
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-
-pip install pynvim
-pip install flake8-black
-pip install isort
 
 if [ ! -d "$HOME/miniconda3" ]; then
     curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
